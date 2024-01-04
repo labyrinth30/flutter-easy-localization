@@ -15,6 +15,16 @@ class HomeScreen extends StatelessWidget {
           children: [
             const Text('Hello', style: TextStyle(fontSize: 24)).tr(),
             const Text('Hello, World!', style: TextStyle(fontSize: 24)).tr(),
+            ElevatedButton(
+                onPressed: () {
+                  EasyLocalization.of(context)!.setLocale(const Locale('ko'));
+                },
+                child: const Text('Change to Korean')),
+            ElevatedButton(
+                onPressed: () {
+                  EasyLocalization.of(context)!.setLocale(const Locale('en'));
+                },
+                child: const Text('Change to English')),
           ],
         ),
       ),
