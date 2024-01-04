@@ -11,7 +11,12 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter Demo Home Page'),
       ),
       body: Center(
-        child: const Text('Hello', style: TextStyle(fontSize: 24)).tr(),
+        child: Column(
+          children: [
+            const Text('Hello', style: TextStyle(fontSize: 24)).tr(),
+            const Text('Hello, World!', style: TextStyle(fontSize: 24)).tr(),
+          ],
+        ),
       ),
     );
   }
